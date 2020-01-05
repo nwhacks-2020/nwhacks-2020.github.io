@@ -1,0 +1,34 @@
+:root {
+  --color-accent: #4d92ce;
+  --color-offblack: #333;
+}
+
+a {
+  color: var(--color-accent);
+}
+
+body, h1, h2, h3, h4, h5, h6 {
+  font-family: 'Open Sans', sans-serif;
+  color: var(--color-offblack);
+}
+
+#accent {
+  font-weight: bold;
+  color: var(--color-accent);
+}
+
+#banner {
+  background-size: cover;
+}
+
+#about-content {
+  margin: auto;
+  padding-left: 1em;
+  padding-right: 1em;
+  max-width: 40em;
+}
+
+.company-logo {
+  width: 12em;
+  height: auto;
+}
