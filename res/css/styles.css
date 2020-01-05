@@ -1,6 +1,11 @@
 :root {
   --color-accent: #4d92ce;
   --color-offblack: #333;
+  --color-offwhite: #f9f9f9;
+}
+
+body {
+  background-color: var(--color-offwhite);
 }
 
 a {
