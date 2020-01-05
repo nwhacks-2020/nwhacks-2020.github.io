@@ -1,5 +1,10 @@
 # <img src="./readme-img/icon.png" width="40"> Template Project Showcase
 
+[![Licence](
+    https://img.shields.io/github/license/USER/REPO)](
+        https://github.com/USER/REPO
+)
+
 Template HTML, CSS, and Bootstrap website to showcase a project.
 
 View the website here: LINK
@@ -10,7 +15,13 @@ ___
 
 ## Template Quickstart
 
-### Application Basics
+In this file:
+* Replace the title
+* Change the licence URL to point the correct repository
+* Add the remaining project information
+
+In `LICENCE`:
+* Change the licence to your preferred licence, or update the year and author
 
 In `readme-img`:
 * Replace the project logo/icon
