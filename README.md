@@ -1,34 +1,19 @@
-# <img src="./readme-img/icon.png" width="40"> Template Project Showcase
+# <img src="./readme-img/icon.jpg" width="30"> Rebuild (nwHacks 2020): Website
 
 [![Licence](
-    https://img.shields.io/github/license/USER/REPO)](
-        https://github.com/USER/REPO
+    https://img.shields.io/github/license/nwhacks-2020/nwhacks-2020.github.io)](
+        https://github.com/nwhacks-2020/nwhacks-2020.github.io/blob/master/LICENCE
 )
 
-Template HTML, CSS, and Bootstrap website to showcase a project.
+View the website here: https://nwhacks-2020.github.io/
 
-View the website here: LINK
+Download the Android application from Google Play here: https://play.google.com/store/apps/details?id=com.nwhacks2020.rebuild
 
-Project created by...
+This project was created by Michelle Swolfs, Praneer Shrestha, Amir Naghibi, Shea Janke, and Jeffrey Leung.
 
 ___
 
 ## Template Quickstart
-
-In this file:
-* Replace the title
-* Change the licence URL to point the correct repository
-* Add the remaining project information
-
-In `LICENCE`:
-* Change the licence to your preferred licence, or update the year and author
-
-In `readme-img`:
-* Replace the project logo/icon
-
-Create a favicon for the website.
-
-Upgrade the jQuery and Bootstrap versions.
 
 In `res/css/styles.css`:
 * Change `color-accent` and `color-offblack` to appropriate values
