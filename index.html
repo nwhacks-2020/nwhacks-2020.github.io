@@ -32,10 +32,14 @@
   <div id="about-content">
 
     <p class="mt-5">
-      <a href="https://github.com/nwhacks-2020/rebuild" target="_blank"><span class="accent">Rebuild</span></a> is an Android application which creates a mesh network to automatically share vital disaster information data between nearby devices without Wi-Fi or cell service.
+      <a href="https://github.com/nwhacks-2020/rebuild" target="_blank"><span class="accent">Rebuild</span></a> is an Android application which creates a mesh network to automatically share vital disaster information data between nearby devices, without Wi-Fi or cell service.
     </p>
     <p>
       The project was created during January 11-12 for <a href="https://www.nwhacks.io/" target="_blank">nwHacks 2020</a>, an annual hackathon hosted by nwPlus at the University of British Columbia.
+    </p>
+
+    <p>
+      This project received <span class="accent"><strong>2nd place</strong></span> out of 145 teams and 769 hackers.
     </p>
 
     <div class="d-block mx-auto py-4" style="text-align: center;">
@@ -70,16 +74,38 @@
 
     <h1 class="my-4">Solution</h1>
     <p>
-      Our solution is...
+      Our solution is Rebuild, an Android application. Users share and receive information about <strong>nearby resources and dangers</strong> by placing icons on a map. The application then creates a mesh network between other devices with the same application to <strong>automatically transfer data</strong>, ensuring that users have the most recent support information.
+    </p>
+    <p>
+      What makes Rebuild unique and effective is that <strong>it does not require wifi or cell service</strong> to share and receive data. The mesh network created by the application between phones is the core of this application, and allows information sharing when all other systems are incapacitated.
+    </p>
+    <p>
+      In short, this solution provides the capability for many citizens to communicate essential information in an emergency situation across great distances.
     </p>
 
     <h2 class="my-4">The System</h2>
     <p>
-      For many years, a <strong>decentralized network</strong> has been the dream of entrepreneurs and technologists. One of the most famous examples is HBO's <a href="https://www.imdb.com/title/tt2575988/" target="_blank">Silicon Valley</a>. Achieving such a concept would mean the ability to create a community or communication system outside of the vices and restrictions of the traditional internet - unlocking possibilities never before considered.
+      For many years, a <strong>decentralized network</strong> has been the dream of entrepreneurs and technologists. A decentralized network consists of nodes which convey information between each other, and therefore does not (always) require a centralized server, or dedicated connection to existing infrastructure for communication. One of the most famous examples is HBO's <a href="https://www.imdb.com/title/tt2575988/" target="_blank">Silicon Valley</a>. Bringing such a concept into widespread adoption would mean the ability to create a community or communication system outside of the vices of the traditional internet and cellular system - unlocking possibilities never before considered.
     </p>
 
+    <p>
+      We took the concept of the decentralized network and applied it to the emergency situation where internet and cellular networks are unavailable - in which case, mobile phones consist of the nodes which communicate information between each other. This is called our <strong>mesh network</strong> between mobile devices. In Rebuild, this communicates between different devices to share information - namely, the markers with local resources and dangers. Nearby devices share their markers with each other, and when people wander to different areas, the markers will continue to be shared with more and more people.
+    </p>
+
+    <hr>
+
+    <p>
+      Take someone who is <strong>farther from the marker than the connection distance between two devices</strong> and, therefore, unable to connect to someone currently at the marker broadcasting the location. As long as they are connected to another person on the mesh network who has the marker registered, they will be able to receive the location and see it on their map. For example, see the following diagram:
+    </p>
     <a href="https://app.cloudcraft.co/view/acc3dec0-a442-4c71-8156-e968d1c060e0?key=LM8q2qVk0XgExLwc5BC5Ig&interactive=true&embed=true" target="_blank">
-      <img class="img-fluid d-block mx-auto my-4" src="res/img/tech/architecture.png" alt="Architecture Diagram">
+      <img class="img-fluid d-block mx-auto my-4" src="res/img/tech/architecture-distance.png" alt="Architecture Diagram">
+    </a>
+
+    <p>
+      A complete mesh network would therefore look similar to the following diagram:
+    </p>
+    <a href="https://app.cloudcraft.co/view/93f9befa-bb10-4f0a-a9f5-b05742a9fb1c?key=7m4dyfatpBoCM2DO7HK-9Q" target="_blank">
+      <img class="img-fluid d-block mx-auto my-4" src="res/img/tech/architecture-mesh-network.png" alt="Architecture Diagram">
     </a>
 
     <h3 class="my-4">Android Application</h3>
