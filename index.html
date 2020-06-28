@@ -32,18 +32,18 @@
   <div id="about-content">
 
     <p class="mt-5">
-      <a href="https://github.com/nwhacks-2020/rebuild" target="_blank"><span class="accent">Rebuild</span></a> is an Android application which creates a mesh network to automatically share vital disaster information data between nearby devices, without Wi-Fi or cell service.
+      <a href="https://play.google.com/store/apps/details?id=com.nwhacks2020.rebuild" target="_blank"><span class="accent">Rebuild</span></a> is an Android application which creates a mesh network to automatically share vital disaster information data between nearby devices, without Wi-Fi or cell service.
     </p>
     <p>
       The project was created during January 11-12 for <a href="https://www.nwhacks.io/" target="_blank">nwHacks 2020</a>, an annual hackathon hosted by nwPlus at the University of British Columbia.
     </p>
 
-    <p>
-      This project received <span class="accent"><strong>2nd place</strong></span> out of 145 teams and 769 hackers.
-    </p>
+    <p><i>
+      Our team won <span class="accent"><strong>2nd place</strong></span> out of 145 teams and 769 hackers.
+    </i></p>
 
     <div class="d-block mx-auto py-4" style="text-align: center;">
-      <a href="https://github.com/nwhacks-2020/nwhacks-2020.github.io" target="_blank">
+      <a href="https://github.com/nwhacks-2020" target="_blank">
         <img class="d-inline px-4 company-logo" src="res/img/tech/github.png" alt="GitHub" title="View the source code on GitHub">
       </a>
       <a href="https://play.google.com/store/apps/details?id=com.nwhacks2020.rebuild" target="_blank">
@@ -92,10 +92,10 @@
       We took the concept of the decentralized network and applied it to the emergency situation where internet and cellular networks are unavailable - in which case, mobile phones consist of the nodes which communicate information between each other. This is called our <strong>mesh network</strong> between mobile devices. In Rebuild, this communicates between different devices to share information - namely, the markers with local resources and dangers. Nearby devices share their markers with each other, and when people wander to different areas, the markers will continue to be shared with more and more people.
     </p>
 
-    <hr>
+    <hr />
 
     <p>
-      Take someone who is <strong>farther from the marker than the connection distance between two devices</strong> and, therefore, unable to connect to someone currently at the marker broadcasting the location. As long as they are connected to another person on the mesh network who has the marker registered, they will be able to receive the location and see it on their map. For example, see the following diagram:
+      Take someone who is <strong>farther from the marker than the connection distance between two devices</strong>, and therefore unable to connect to someone currently at the marker broadcasting the location. As long as they are connected to another person on the mesh network who has the marker registered, they will be able to receive the location and see it on their map. For example, see the following diagram:
     </p>
     <a href="https://app.cloudcraft.co/view/acc3dec0-a442-4c71-8156-e968d1c060e0?key=LM8q2qVk0XgExLwc5BC5Ig&interactive=true&embed=true" target="_blank">
       <img class="img-fluid d-block mx-auto my-4" src="res/img/tech/architecture-distance.png" alt="Architecture Diagram">
@@ -113,25 +113,57 @@
       <img class="img-fluid d-block mx-auto py-4 company-logo" src="res/img/tech/android.svg" alt="Android logo">
     </a>
     <p>
-      The mobile application on Android...
+      The mobile application is built on Android, and primarily consists of two distinct sections:
     </p>
-
+    <ol>
+      <li>A view of all current markers with a button to add markers, and</li>
+      <li>A passive set of background services which handle the mesh network connections and sharing/receiving of markers.</li>
+    </ol>
     <p>
-      Android's <a href="https://developers.google.com/nearby/connections/overview" target="_blank">Nearby Communications API</a> was the platform on which we built our mesh network.
+      We built our mesh network on Android's <a href="https://developers.google.com/nearby/connections/overview" target="_blank">Nearby Communications API</a>. Our mesh network service constantly attempts to connect with nearby devices using the same application and maintains these connections up to a distance, which we verified to be at least <strong>70 metres and around a corner</strong>.
+    </p>
+    <p>
+      The second background service handles messaging, and every so often will share the device's list of markers with all currently connected devices. When markers are received, duplicates are eliminated and unique new markers are instantly added to the map. We verified the sharing and refresh rate to sometimes be <strong>within 10 seconds</strong>, even in a hall crowded with people and other devices.
     </p>
 
-    <h3 class="my-4">Graphic Design (Figma)</h3>
+
+    <h3 class="my-4">UX/UI Design (Figma)</h3>
     <a href="https://www.figma.com/" target="_blank">
       <img class="img-fluid d-block mx-auto py-4 company-logo" src="res/img/tech/figma.png" alt="Figma Logo">
     </a>
     <p>
-      To visually understand how users would navigate and use the application, graphic designs were created using <a href="https://www.figma.com/" target="_blank"><strong>Figma</strong></a> and passed to the developers.
+      To visually understand how users would navigate and use the application, user flows were created using <a href="https://www.figma.com/" target="_blank"><strong>Figma</strong></a> and passed to the developers.
     </p>
     <p>
-      To learn more about the creative process for Rebuild, visit Michelle Swolf's portfolio <a href="https://michelleswolfs.myportfolio.com/rebuild" target="_blank">here</a>.
+      To learn more about the creative process for Rebuild, visit Michelle Swolfs' portfolio <a href="https://michelleswolfs.myportfolio.com/rebuild" target="_blank">here</a>.
     </p>
 
-    <hr>
+    <h1 class="my-4">Results</h1>
+
+    <p>
+      We placed <b class="accent">2nd</b> in the hackathon out of 145 teams and 769 hackers.
+    </p>
+
+    <blockquote class="twitter-tweet">
+      <p lang="en" dir="ltr">
+        Congrats to Rebuild for winning 2nd place at <a href="https://twitter.com/nwplusubc?ref_src=twsrc%5Etfw">@nwplusubc</a> this weekend! <a href="https://twitter.com/hashtag/nwHacks2020?src=hash&amp;ref_src=twsrc%5Etfw">#nwHacks2020</a> <a href="https://t.co/Bw0ms7wHED">pic.twitter.com/Bw0ms7wHED</a>
+      </p>
+      &mdash; Major League Hacking (@MLHacks) <a href="https://twitter.com/MLHacks/status/1216764728007184385?ref_src=twsrc%5Etfw">January 13, 2020</a>
+    </blockquote>
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+    <p class="my-4">
+      The judges consisted of:
+
+      <ul>
+        <li> Google Developer Advocate <a href="https://www.linkedin.com/in/ryanmatsumoto" target="_blank"><strong>Ryan Matsumoto</strong></a>,</li>
+        <li> Bloomberg Software Engineer <a href="https://www.linkedin.com/in/calvinchengcc/" target="_blank"><strong>Calvin Cheng</strong></a>,</li>
+        <li> Hootsuite Software Developer <a href="https://www.linkedin.com/in/rpdjacinto" target="_blank"><strong>Rafael Jacinto</strong></a>, and</li>
+        <li> UBC Research Coordinator <a href="https://www.linkedin.com/in/jacquelinepashby" target="_blank"><strong>Jacqueline Ashby</strong></a>.</li>
+      </ul>
+    </p>
+
+    <hr class="my-4" />
 
     <h1 class="my-4">About the Team</h1>
     <p></p>
