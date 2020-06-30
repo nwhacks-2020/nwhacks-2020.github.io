@@ -2,7 +2,7 @@
 
 [![Licence](
     https://img.shields.io/github/license/nwhacks-2020/nwhacks-2020.github.io)](
-        https://github.com/nwhacks-2020/nwhacks-2020.github.io/blob/master/LICENCE
+        https://github.com/nwhacks-2020/nwhacks-2020.github.io/blob/master/LICENSE
 )
 
 View the website here: https://nwhacks-2020.github.io/
